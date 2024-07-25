@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Author{% endblock %}</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+</style>
+</head>
+<body>
+<div class="container">
+    <div style="text-align: right; margin-bottom: 10px;">
+        <form method="GET" action="{% url 'main' %}">
+            {% csrf_token %}
+            <button type="submit">Return to quotes</button>
+        </form>
+    </div>
+
+    {% block content %}
+    <h2>Author</h2>
+    <h1>{{ author.name }}</h1>
+    <p>{{ author.description }}</p>
+    {% endblock %}
+</div>
+</body>
+</html>

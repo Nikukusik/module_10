@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Welcome{% endblock %}</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+</style>
+</head>
+<body>
+<div class="container">
+    <div style="text-align: right; margin-bottom: 10px;">
+        {% if user.is_authenticated %}
+            <!-- Кнопка Логаут -->
+            <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+            </form>
+            <form method="POST" action="{% url 'add_tag' %}">
+            {% csrf_token %}
+            <button type="submit">Add_tag</button>
+            </form>
+            <form method="POST" action="{% url 'add_author' %}">
+            {% csrf_token %}
+            <button type="submit">Add_author</button>
+            </form>
+            <form method="POST" action="{% url 'add_quote' %}">
+            {% csrf_token %}
+            <button type="submit">Add_quote</button>
+            </form>
+        {% else %}
+            <!-- Кнопка Логін -->
+            <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            <button type="submit">Login</button>
+            </form>
+            <form method="GET" action="{% url 'register' %}">
+            {% csrf_token %}
+            <button type="submit">Registration</button>
+            </form>
+        {% endif %}
+    </div>
+
+    {% block content %}
+    <!-- Заглушка для контенту -->
+    <h2>All Quotes</h2>
+    <ul>
+        {% for quote in quotes %}
+            <li>
+                <strong>{{ quote.text }}</strong> - <em><p><a href="{%url 'author' %}">{{ quote.author.name }}</a></p></em>
+                <br>
+                Tags:
+                {% for tag in quote.tags.all %}
+                    <span class="badge badge-info">{{ tag.name }}</span>
+                {%endfor%}
+            </li>
+        {%endfor%}
+    </ul>
+    {% endblock %}
+</div>
+</body>
+</html>
