@@ -12,12 +12,12 @@ class AuthorForm(ModelForm):
 
     class Meta:
         model = Author
-        fields = ['name', 'description']
+        fields = ['fullname', 'born_date', 'born_location', 'description']
 
 class QuoteForm(ModelForm):
     class Meta:
         model = Quote
-        fields = ['text', 'author', 'tags']
+        fields = ['quote', 'author', 'tags']
         widgets = {
             'tag': CheckboxSelectMultiple()
         }

@@ -10,6 +10,8 @@ python = "^3.12"
 setuptools = "^71.1.0"
 django = "^5.0.7"
 psycopg2 = "^2.9.9"
+pymongo = "^4.8.0"
+mongoengine = "^0.28.2"
 
 
 [build-system]

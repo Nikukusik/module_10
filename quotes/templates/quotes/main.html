@@ -54,7 +54,7 @@
     <ul>
         {% for quote in quotes %}
             <li>
-                <strong>{{ quote.text }}</strong> - <em><p><a href="{%url 'author' %}">{{ quote.author.name }}</a></p></em>
+                <strong>{{ quote.quote }}</strong> - <em><p><a href="{%url 'author' %}">{{ quote.author.fullname }}</a></p></em>
                 <br>
                 Tags:
                 {% for tag in quote.tags.all %}
