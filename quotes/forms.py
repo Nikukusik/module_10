@@ -8,11 +8,12 @@ class TagForm(ModelForm):
         model = Tag
         fields = ['name']
 
-class AuthorForm(ModelForm):
 
+class AuthorForm(ModelForm):
     class Meta:
         model = Author
         fields = ['fullname', 'born_date', 'born_location', 'description']
+
 
 class QuoteForm(ModelForm):
     class Meta:

@@ -47,21 +47,20 @@
             </form>
         {% endif %}
     </div>
-
     {% block content %}
-    <!-- Заглушка для контенту -->
+    <!-- Заглушка для контента -->
     <h2>All Quotes</h2>
     <ul>
         {% for quote in quotes %}
-            <li>
-                <strong>{{ quote.quote }}</strong> - <em><p><a href="{%url 'author' %}">{{ quote.author.fullname }}</a></p></em>
-                <br>
-                Tags:
-                {% for tag in quote.tags.all %}
-                    <span class="badge badge-info">{{ tag.name }}</span>
-                {%endfor%}
-            </li>
-        {%endfor%}
+        <li>
+            <strong>{{ quote.quote }}</strong> - <em><a href="{% url 'author_detail' quote.author.id %}">{{ quote.author.fullname }}</a></em>
+            <br>
+            Tags:
+            {% for tag in quote.tags.all %}
+            <span class="badge badge-info">{{ tag.name }}</span>
+            {% endfor %}
+        </li>
+        {% endfor %}
     </ul>
     {% endblock %}
 </div>

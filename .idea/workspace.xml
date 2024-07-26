@@ -1,78 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b8233f-a1f3-4525-b5fc-c3650a43f40d" name="Changes" comment="almost done">
-      <change afterPath="$PROJECT_DIR$/migration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/connection_to_mongo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="4669bd9f-b145-4ec4-859b-72f85c3dc6c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/quotes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quotes/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quotes/migrations/0002_rename_authors_author_remove_quote_added_by.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quotes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes/templates/quotes/authors.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/quotes/templates/quotes/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/quotes/templates/quotes/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Nikukusik&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Nikukusik"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nikukusik/module_10.git&quot;,
-    &quot;accountId&quot;: &quot;ac6bace5-668c-4013-8feb-13a570b5071b&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Nikukusik/module_10.git",
+    "accountId": "ac6bace5-668c-4013-8feb-13a570b5071b"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2jhKelbAwuDmBlRaixzZLQro5e1" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2jmGiIYxP6jNwFVJGyq3NQb3mWb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.connection_to_mongo.executor": "Run",
-    "Python.migration.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/code/python/python_web/module_10/quotes/templates/quotes"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\python\python_web\module_10\quotes\templates\quotes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\python\python_web\module_10" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,25 +55,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="94b8233f-a1f3-4525-b5fc-c3650a43f40d" name="Changes" comment="" />
-      <created>1721833966545</created>
+      <changelist id="4669bd9f-b145-4ec4-859b-72f85c3dc6c8" name="Changes" comment="" />
+      <created>1721984964156</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721833966545</updated>
+      <updated>1721984964156</updated>
     </task>
-    <task id="LOCAL-00001" summary="almost done">
-      <option name="closed" value="true" />
-      <created>1721916930448</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721916930448</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>

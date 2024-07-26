@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
+from django.views.generic import DetailView
 from django.views.generic import ListView, CreateView
 
 from quotes.forms import TagForm, AuthorForm, QuoteForm
@@ -12,10 +13,13 @@ class MainView(ListView):
     template_name = 'quotes/main.html'
     context_object_name = 'quotes'
 
-class AuthorListView(ListView):
+class AuthorDetailView(DetailView):
     model = Author
-    template_name = 'quotes/authors.html'
+    template_name = 'quotes/author_detail.html'
     context_object_name = 'author'
+
+    def get_object(self):
+        return Author.objects.get(id=self.kwargs['id'])
 
 
 class AddTagView(LoginRequiredMixin, CreateView):
