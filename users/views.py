@@ -33,3 +33,11 @@ class RegisterView(View):
             return redirect('/')
         return render(request, self.template_name, {'form': form})
 
+class ResetPasswordView(SuccessMessageMixin, PasswordResetView):
+    template_name = 'users/password_reset.html'
+    email_template_name = 'users/password_reset_email.html'
+    html_email_template_name = 'users/password_reset_email.html'
+    success_url = reverse_lazy('users:password_reset_done')
+    success_message = "An email with instructions has been send to %(email)s."
+    subject_template_name = 'users/password_reset_subject.txt'
+
